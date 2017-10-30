@@ -148,9 +148,8 @@ article p{
     transition: 800ms;
     transition-delay: 100ms;
     transition-timing-function: ease;
-  }
+    }
 
   .social-bar i:hover{
-    /*transform:translate3d(10);*/
     transform: scale(1.25);
   }
