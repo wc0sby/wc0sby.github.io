@@ -94,22 +94,23 @@ main{
 section{
   display: flex;
   flex-direction: row;
-  justify-content: space-between flex-start;
-  align-items: center;
+  justify-content: space-between;
   align-self: center;
   /*flex-wrap: wrap;*/
   max-width: 45%;
+
 }
 
 article{
   /*padding: 0 5px;*/
   color: #ffffff;
-  max-width: 30%;
+  width: 30%;
   background:rgba(0, 0, 0, 0.6);
   padding: 0 5px;
   transition: 800ms;
   transition-delay: 100ms;
   transition-timing-function: ease;
+
 }
 
 article:hover {
@@ -140,10 +141,10 @@ article p{
     position: fixed;
     font-size: 2vw;
     top: 40%;
-    left: 0;
+    left: 5px;
     display: flex;
     flex-direction: column;
-    background: rgba(167, 191, 203,0.6);
+    /*background: rgba(167, 191, 203,0.6);*/
     border-radius: 0 5px 5px 0;
     transition: 800ms;
     transition-delay: 100ms;
