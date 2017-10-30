@@ -21,7 +21,7 @@ align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  align-content: space-between;
 }
 
 .myLogo h1{
@@ -45,6 +45,7 @@ nav a{
 /*Primary content styling*/
 main{
   display: flex;
+  top: 25%;
   align-items: center;
   justify-content: space-around;
   margin: 5% 0;
@@ -53,10 +54,16 @@ main{
 
 /*Info bubble with montra*/
 .booking{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-shrink: 3;
   height: 450px;
   width: 450px;
   border-radius: 50%;
   align-self:flex-start;
+  align-items: center;
+  justify-content: center;
   box-shadow: -125px -2px 200px rgba(0,0,0,0.6), 125px 2px 200px rgba(0,0,0,0.6);
   background: rgba(167, 191, 203,0.6);
   /*box-sizing: border-box;*/
@@ -64,10 +71,10 @@ main{
 
 .booking h1{
   text-align: center;
-  margin: 18% 0 0 0;
+  /*margin: 18% 0 0 0;*/
   padding: 0 40px;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 1.75vw;
   text-shadow: 2px 2px 5px #ffffff, 2px 2px #000000, 0px 0px 5px #000000;
 }
 .booking h2{
@@ -121,4 +128,29 @@ article h1,article h2,article h3{
 article p{
   font-size: .7vw;
   /*color: #719f0a;*/
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  aside{
+    position: fixed;
+    font-size: 2vw;
+    top: 40%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(167, 191, 203,0.6);
+    border-radius: 0 5px 5px 0;
+    transition: 800ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease;
+  }
+
+  .social-bar i:hover{
+    /*transform:translate3d(10);*/
+    transform: scale(1.25);
   }
