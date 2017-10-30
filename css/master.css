@@ -1,0 +1,89 @@
+/*Adding slight padding around the entire page with a full image background*/
+html{
+  margin: 2% 10%;
+  background-image: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body{
+
+}
+
+/*Flexed all children to move all content inline with spacing between each block*/
+header{
+display: flex;
+justify-content: space-between;
+font-family: 'Architects Daughter', cursive;
+align-items: flex-end;
+border-bottom: solid 2px #ffffff;
+}
+
+/*This div was created for additional flexibility for styling a header with our logo*/
+.myLogo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.myLogo h1{
+  font-size: 2.25em;
+  align-items: flex-end;
+  color: #ffffff;
+  }
+
+nav a{
+  font-size: 1.25em;
+  margin: 0 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5% 0 0 0;
+}
+
+.booking{
+  border: solid 2px #ffffff;
+  height: 400px;
+  width: 35%;
+  border-radius: 50%;
+  align-self:flex-start;
+
+
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between flex-start;
+  align-items: center;
+  align-self: center;
+
+  /*flex-wrap: wrap;*/
+  max-width: 45%;
+  font-family: 'Architects Daughter', cursive;
+}
+
+article{
+  /*padding: 0 5px;*/
+  color: #ffffff;
+  max-width: 30%;
+  background:rgba(0, 0, 0, 0.6);
+  padding: 0 5px;
+}
+
+article h1,h2,h3{
+  font-size: 1em;
+  text-align: center;
+}
+
+
+article p{
+  font-size: .7em;
+  /*color: #719f0a;*/
+  }
