@@ -74,13 +74,10 @@ main{
   justify-content: center;
   box-shadow: -125px -2px 200px rgba(0,0,0,0.6), 125px 2px 200px rgba(0,0,0,0.6);
   background: rgba(167, 191, 203,0.6);
-  /*box-sizing: border-box;*/
 }
 
 .booking h1{
   text-align: center;
-  /*line-height: 0;*/
-  /*margin: 18% 0 0 0;*/
   padding: 0 40px;
   color: #ffffff;
   font-size: 1.75vw;
@@ -105,16 +102,13 @@ section{
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
-  /*flex-wrap: wrap;*/
   max-width: 55%;
 
 
 }
 
 article{
-  /*padding: 0 5px;*/
   color: #ffffff;
-  /*justify-content: space-around;*/
   width: 30%;
   background:rgba(0, 0, 0, 0.6);
   padding: 0 5px;
@@ -126,7 +120,6 @@ article{
 
 article:hover {
   transform: scale(1.5);
-  /*max-width: 100%;*/
   background:rgba(0, 0, 0, 0.9);
   box-shadow: 2px 2px 5px #ffffff, 4px 4px 10px #000000, 2px 2px 5px #ffffff, 4px 4px 10px #000000;;
 }
@@ -142,7 +135,6 @@ article h1,article h2,article h3{
 article p{
   font-size: .7vw;
   padding-top: 5px;
-  /*color: #719f0a;*/
   }
 
   .tours img{
@@ -162,7 +154,6 @@ article p{
     color: #dee0e2;
     justify-content: space-between;
     min-height: 70%;
-    /*background: rgba(0,0,0,0.6);*/
   }
 
   .contact{
@@ -188,7 +179,6 @@ article p{
     left: 5px;
     display: flex;
     flex-direction: column;
-    /*background: rgba(167, 191, 203,0.6);*/
     border-radius: 0 5px 5px 0;
     transition: 800ms;
     transition-delay: 100ms;
