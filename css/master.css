@@ -20,20 +20,26 @@ align-items: flex-end;
 /*This div was created for additional flexibility for styling a header with our logo*/
 .myLogo{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-content: space-between;
+  width: 50%;
+}
+
+.myLogo img{
+  width: 20%;
 }
 
 .myLogo h1{
   font-size: 2.5vw;
-  align-items: flex-end;
+  align-self: center;
   color: #ffffff;
   text-shadow: 2px 2px 5px #ffffff, 2px 2px #000000, 0px 0px 5px #000000;
   }
 
 nav{
  border-bottom: solid 2px #ffffff;
+ width: auto;
 
 }
 
@@ -158,12 +164,12 @@ article p{
 
   .contact{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
   }
 
   .credits{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: 10%;
 
   }
@@ -187,4 +193,50 @@ article p{
 
   .social-bar i:hover{
     transform: scale(1.25);
+  }
+
+  @media (max-width:1080px) {
+    html{
+      background-position: center;
+      background-size: auto;
+    }
+
+    nav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+    }
+
+    .myLogo img{
+      width: auto;
+      /*height: auto;*/
+    }
+
+    main{
+      flex-direction: column;
+      align-items: center;
+    }
+    section{
+      flex-direction: column;
+      width: 100%;
+    }
+    article{
+      width: 100%;
+    }
+    .contact{
+      position: relative;
+      bottom: 0px;
+    }
+
+    .credits{
+      position: relative;
+      bottom: 0px;
+      right: 1%;
+    }
+
+    .booking{
+      align-self: center;
+    }
+
   }
