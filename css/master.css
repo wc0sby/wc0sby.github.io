@@ -23,7 +23,7 @@ align-items: flex-end;
   flex-wrap: nowrap;
   flex-direction: row;
   align-content: space-between;
-  width: 50%;
+  width: 40%;
 }
 
 .myLogo img{
